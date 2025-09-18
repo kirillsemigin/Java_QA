@@ -1,4 +1,3 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Lesson2Task1 {
@@ -11,11 +10,18 @@ public class Lesson2Task1 {
     public static void main(String[] args) {
         System.out.println("Введите число месяца");
         Scanner scanner = new Scanner(System.in);
+/* Добавим проверку на ввод пустого значения.
+ */
+        String input = scanner.nextLine(); // Считываем строку с квавиатуры
+        if(input.trim().isEmpty()) { // функцией trim() убираем пробелы в начале и в конце. isEmpty проверяет на пустоту
+            System.out.println("Вы ничего не ввели"); // если условие верно, возвращаем сообщение что ничего не было введено и прерываем работу
+            return;
+        }
 
 
         try {
 
-            int n = scanner.nextInt();
+            int n = Integer.parseInt(input); // кладем полученное значение из input в переменную n и пробуем преобразовать в число
 
             switch (n) {
                 case 1:
@@ -57,7 +63,7 @@ public class Lesson2Task1 {
                 default:
                     System.out.println("Такого месяца не существует"); // Если введенное число находится вне диапозона выводим сообщение, что такого месяца не существует
             }
-        } catch (InputMismatchException e) {
+        } catch (NumberFormatException e) {
             System.out.println("Вы ввели не число");
         }
     }
