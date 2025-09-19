@@ -7,6 +7,7 @@ public class Lesson2Task5 {
 «Warm».
 Если –5>= t >–20, то вывести «Normal». Если –20>= t, то вывести «Cold».
      */
+
     public static void main(String[] args) {
         System.out.println("Введите температуру");
         Scanner scanner = new Scanner(System.in);
