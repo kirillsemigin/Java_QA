@@ -7,10 +7,11 @@ public class Task_7 {
 21 / 8 = 2 и 5 в остатке.
      */
     public static void main(String[] args) {
-        double q, w;
-        q = 5;
-        w = 2;
-        double result = q / w;
-        System.out.println(result);
+        int q, w;
+        q = 21;
+        w = 8;
+        int result1 = q / w;
+        int result2 = q % w;
+        System.out.println(q + " / " + w + " = " + result1 + " и " + result2 + " в остатке");
     }
 }
