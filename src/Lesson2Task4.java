@@ -24,5 +24,6 @@ public class Lesson2Task4 {
         } catch (NumberFormatException e) {  // обертка для ошибки в случае если ввели не число
             System.out.println("Вы ввели не число");
         }
+        scanner.close();
     }
 }
