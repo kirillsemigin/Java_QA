@@ -13,17 +13,15 @@ public class Lesson2Task8 {
         System.out.println("Введите любое целое положительное число");
         Scanner scanner = new Scanner(System.in);
         int result = 0;
-
         String input = scanner.nextLine();
         if(input.trim().isEmpty()){ // проверяем на пустой ввод
             System.out.print("Вы ничего не ввели");
             return;
         }
-
         try { // проверяем что введено число типа int
             int n = Integer.parseInt(input);
-            if(n < 0){ // проверяем что введено положительное число
-                System.out.println("Вы ввели отрицательное число");
+            if(n < 0 || n == 0){ // проверяем что введено положительное число != 0
+                System.out.println("Вы ввели число, которое не соответствует требованиям задачи");
                 return;
             }
                 for(int a = 1; a <= n; a++){
@@ -33,5 +31,6 @@ public class Lesson2Task8 {
         } catch (NumberFormatException e) {
             System.out.println("Некорректный формат данных");
         }
+        scanner.close();
     }
 }
