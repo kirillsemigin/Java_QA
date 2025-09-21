@@ -17,6 +17,7 @@ public class Lesson2Task5 {
             System.out.println("Вы ничего не ввели");
             return;
         }
+        scanner.close();
 
         try {
             int t = Integer.parseInt(input);
