@@ -24,7 +24,7 @@ public class Lesson2Task5 {
             if (t <= -20) {
                 System.out.println("Cold");
             }
-            else if (t <= -5 && t > -20 ) {
+            else if (t <= -5) {
                 System.out.println("Normal");
             }
             else {
