@@ -16,6 +16,7 @@ public class Lesson3Task3 {
         Scanner scanner = new Scanner(System.in);
         int range = scanner.nextInt(); // пользователь указывает размер массива
         masDouble = new double[range]; // 3.1 объявляем массив типа double размером = range
+        scanner.close();
         /*
         3.2 заполняем массив рандомными числами и выводим их в консоль
          */
