@@ -12,7 +12,7 @@ public class Lesson3Task4 {
         Random random = new Random();
 
         for (int i = 0; i < range; i++) {
-            numbers[i] = random.nextInt(10);
+            numbers[i] = random.nextInt(50);
         }
         /*
         Задача 1:
