@@ -12,7 +12,7 @@ public class Lesson3Task4 {
         Random random = new Random();
 
         for (int i = 0; i < range; i++) {
-            numbers[i] = random.nextInt(3);
+            numbers[i] = random.nextInt(10);
         }
         /*
         Задача 1:
@@ -33,21 +33,23 @@ public class Lesson3Task4 {
 Найти минимальный - максимальный элементы и вывести в консоль.
          */
         int min = numbers[0];
+        int posMin = 0;
         for (int i = 0; i < range; i++) {
             if (numbers[i] < min) {
                 min = numbers[i];
+                posMin = i;
             }
         }
-        int posMin = Arrays.binarySearch(numbers, min);
         System.out.println("Наименьшее число в массиве = " + min);
 
         int max = numbers[0];
+        int posMax = 0;
         for (int i = 0; i < range; i++) {
             if (numbers[i] > max) {
                 max = numbers[i];
+                posMax = i;
             }
         }
-        int posMax = Arrays.binarySearch(numbers, max);
         System.out.println("Наибольшее число в массиве = " + max);
         /*
         Задача 3:
