@@ -78,16 +78,17 @@ public class Lesson3Task4 {
 Пройти по массиву и поменять местами элементы первый и последний, второй
 и предпоследний и т.д.
          */
+        int[] numbersNew = Arrays.copyOf(numbers, numbers.length);
         // меняем местами первый и последний элемент местами
-        int temp1 = numbers[0];
-        numbers[0] = numbers[range - 1];
-        numbers[range - 1] = temp1;
+        int temp1 = numbersNew[0];
+        numbersNew[0] = numbersNew[range - 1];
+        numbersNew[range - 1] = temp1;
         // меняем местами второй и предпоследний элемент местами
-        int temp2 = numbers[1];
-        numbers[1] = numbers[range - 2];
-        numbers[range - 2] = temp2;
+        int temp2 = numbersNew[1];
+        numbersNew[1] = numbersNew[range - 2];
+        numbersNew[range - 2] = temp2;
         // выводим на экран новое состояние массива
-        System.out.println(Arrays.toString(numbers));
+        System.out.println(Arrays.toString(numbersNew));
         /*
         Задача 6:
 Проверить, является ли массив возрастающей последовательностью (каждое
