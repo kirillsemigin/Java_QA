@@ -19,8 +19,7 @@ Output: [1,0,0,0]
         for (int i = 0; i < input.length; i++){ // проходим по массиву и перкладываем значения в переменную temp
             temp = temp + input[i];
         }
-        System.out.print("Input: " + Arrays.toString(input));
-        System.out.println(" ");
+        System.out.println("Input: " + Arrays.toString(input));
         int temp2 = Integer.parseInt(temp); // превращаем значение переменной temp в число и кладем в переменную temp2
         temp2 = temp2 + 1; // к числу прибавляем единицу
         String temp3 = temp2 +""; // преобразуем число в строку
