@@ -79,14 +79,11 @@ public class Lesson3Task4 {
 и предпоследний и т.д.
          */
         int[] numbersNew = Arrays.copyOf(numbers, numbers.length);
-        // меняем местами первый и последний элемент местами
-        int temp1 = numbersNew[0];
-        numbersNew[0] = numbersNew[range - 1];
-        numbersNew[range - 1] = temp1;
-        // меняем местами второй и предпоследний элемент местами
-        int temp2 = numbersNew[1];
-        numbersNew[1] = numbersNew[range - 2];
-        numbersNew[range - 2] = temp2;
+        for (int i = 0; i < (numbersNew.length / 2); i++) {
+            int temp = numbersNew[i];
+            numbersNew[i] = numbersNew[numbersNew.length - 1 - i];
+            numbersNew[numbersNew.length - 1 - i] = temp;
+        }
         // выводим на экран новое состояние массива
         System.out.println(Arrays.toString(numbersNew));
         /*
@@ -101,7 +98,7 @@ public class Lesson3Task4 {
                 break;
             }
         }
-        if (isSequence == true){
+        if (isSequence){
             System.out.println("Массив является возрастающей последовательностью");
         } else {
             System.out.println("Массив не является возрастающей последовательностью");
