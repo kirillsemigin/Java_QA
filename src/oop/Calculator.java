@@ -11,6 +11,17 @@ public class Calculator {
     int cost;
     String color;
 
+    {
+        System.out.println("Создается объект калькулятора");
+        System.out.println("______________________________");
+    }
+
+    public Calculator(int weight, int cost, String color) {
+        this.weight = weight;
+        this.cost = cost;
+        this.color = color;
+    }
+
     public int addition(int a, int b) {
         return a + b;
     }

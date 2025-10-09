@@ -2,10 +2,7 @@ package oop;
 
 public class Main {
     public static void main(String[] args) {
-        Calculator calculator = new Calculator();
-        calculator.color = "Red";
-        calculator.cost = 12;
-        calculator.weight = 150;
+        Calculator calculator = new Calculator(150, 12, "Red");
 
         int sum = calculator.addition(3, 5);
         int sub = calculator.subtraction(10, 4);
