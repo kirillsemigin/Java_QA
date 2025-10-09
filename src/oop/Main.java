@@ -17,5 +17,9 @@ public class Main {
         System.out.println("Произвдение: " + mult);
         System.out.println("Частное: " + div);
 
+        System.out.println("Цвет: " + calculator.color);
+        System.out.println("Цена: " + calculator.cost);
+        System.out.println("Вес: " + calculator.weight);
+
     }
 }
