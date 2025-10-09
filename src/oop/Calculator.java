@@ -5,7 +5,6 @@ package oop;
 методами нахождения суммы, разности, деления, умножения двух чисел.
 Метод main в этом классе не создавать!
 */
-
 public class Calculator {
     int weight;
     int cost;
