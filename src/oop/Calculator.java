@@ -15,7 +15,7 @@ public class Calculator {
         System.out.println("______________________________");
     }
 
-    public Calculator(int weight, int cost, String color) {
+    public Calculator(int weight, int cost, String color) { // конструктор
         this.weight = weight;
         this.cost = cost;
         this.color = color;
