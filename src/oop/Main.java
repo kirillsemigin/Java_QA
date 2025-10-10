@@ -18,5 +18,16 @@ public class Main {
         System.out.println("Цена: " + calculator.cost);
         System.out.println("Вес: " + calculator.weight);
 
+        System.out.println("------------------------------");
+
+        Person personEmpty = new Person();
+        Person person = new Person("User", 35);
+
+        person.talk("em govno rukami");
+        person.move();
+
+        personEmpty.talk("hello");
+        personEmpty.move();
+
     }
 }
