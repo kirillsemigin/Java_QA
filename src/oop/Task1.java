@@ -9,9 +9,9 @@ public class Task1 {
         /*
         Действия с картами
          */
-        creditCard1.topUpCard(creditCard1.balance, 500); // пополняем карту 1
-        creditCard2.topUpCard(creditCard2.balance, 300); // пополняем карту 2
-        creditCard3.withDrawFromCard(creditCard3.balance, 200); // снимаем с карты 3
+        creditCard1.topUpCard(500); // пополняем карту 1
+        creditCard2.topUpCard(300); // пополняем карту 2
+        creditCard3.withDrawFromCard(200); // снимаем с карты 3
         /*
         Выводим на экран текущее состояние всех трех карточек
          */
